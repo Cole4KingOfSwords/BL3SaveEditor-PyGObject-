@@ -1,0 +1,254 @@
+<!--  Top OF Main,xml  -->
+<interface>
+    <!-- Window -->
+    <object class="GtkWindow" id="window">
+        <property name="default_width">400</property>
+        <property name="hexpand">True</property>
+        <child>
+            <!-- Body -->
+            <object class="GtkBox" id="body">
+                <property name="orientation">vertical</property>
+                <property name="hexpand">True</property>
+                <!-- Header -->
+                <child>
+                    <object class="GtkMenuBar" id="Menu">
+                        <child>
+                            <object class="GtkMenuItem" id="open">
+                                <property name="label">Open</property>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkMenuItem" id="save">
+                                <property name="label">Save</property>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkMenuItem" id="save_as">
+                                <property name="label">Save As</property>
+                            </object>
+                        </child>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkBox" id="header">
+                        <property name="name">header</property>
+
+<!-- Find whatever icons OP used -->
+                        <child>
+                            <object class="GtkButton" id="general_button">
+                                <property name="hexpand">True</property>
+                                <child>
+                                       <object class="GtkBox">
+                                           <child>
+                                               <object class="GtkImage" id="general_icon">
+                                                   <property name="file">hex.png</property>
+                                               </object>
+                                           </child>
+                                           <child>
+                                               <object class="GtkLabel">
+                                                   <property name="label">General</property>
+                                               </object>
+                                           </child>
+                                    </object>
+                                </child>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkButton" id="character_button">
+                                <property name="hexpand">True</property>
+                                <child>
+                                    <object class="GtkBox">
+                                        <child>
+                                            <object class="GtkImage" id="character_icon">
+                                                <property name="file">hex.png</property>
+                                            </object>
+                                        </child>
+                                        <child>
+                                            <object class="GtkLabel">
+                                                <property name="label">Character</property>
+                                            </object>
+                                        </child>
+
+                                    </object>
+                                </child>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkButton" id="fast_t_button">
+                                <property name="hexpand">True</property>
+                                <child>
+                                    <object class="GtkBox">
+                                        <child>
+                                            <object class="GtkImage" id="fast_t_icon">
+                                                <property name="file">hex.png</property>
+                                            </object>
+                                        </child>
+                                        <child>
+                                            <object class="GtkLabel">
+                                                <property name="label">Fast Travel</property>
+                                            </object>
+                                        </child>
+                                    </object>
+                                </child>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkButton" id="inv_button">
+                                <property name="hexpand">True</property>
+                                <child>
+                                    <object class="GtkBox">
+                                        <child>
+                                            <object class="GtkImage" id="inventory_icon">
+                                                <property name="file">hex.png</property>
+                                            </object>
+                                        </child>
+                                        <child>
+                                            <object class="GtkLabel">
+                                                <property name="label">Inventory</property>
+                                            </object>
+                                        </child>
+                                    </object>
+                                </child>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkButton" id="raw_button">
+                                <property name="hexpand">True</property>
+                                <child>
+                                    <object class="GtkBox">
+                                        <child>
+                                            <object class="GtkImage" id="raw_icon">
+                                                <property name="file">hex.png</property>
+                                            </object>
+                                        </child>
+                                        <child>
+                                            <object class="GtkLabel">
+                                                <property name="label">Raw</property>
+                                            </object>
+                                        </child>
+                                    </object>
+                                </child>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkButton" id="profile_button">
+                                <property name="hexpand">True</property>
+                                <child>
+                                    <object class="GtkBox">
+                                        <child>
+                                            <object class="GtkImage" id="profile_icon">
+                                                <property name="file">hex.png</property>
+                                            </object>
+                                        </child>
+                                        <child>
+                                            <object class="GtkLabel">
+                                                <property name="label">Profile</property>
+                                            </object>
+                                        </child>
+                                    </object>
+                                </child>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkButton" id="about_button">
+                                <property name="hexpand">True</property>
+                                <child>
+                                    <object class="GtkBox">
+                                        <child>
+                                            <object class="GtkImage" id="about_icon">
+                                                <property name="file">hex.png</property>
+                                            </object>
+                                        </child>
+                                        <child>
+                                            <object class="GtkLabel">
+                                                <property name="label">About</property>
+                                            </object>
+                                        </child>
+                                    </object>
+                                </child>
+                            </object>
+                        </child>
+                    </object>
+                </child>
+
+                <!-- View -->
+                <child>
+                    <object class="GtkBox" id="view">
+
+                    </object>
+                </child>
+                <!-- /notHeader -->
+                <!--  -->
+            </object>
+        </child>
+        <!--  -->
+    </object>
+
+    <!-- Views -->
+<!-- Might cause issues if everything is kept in mem-->
+    <object class="GtkBox" id="Test">
+        <child>
+            <object class="GtkLabel">
+                <property name="label">GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG</property>
+            </object>
+        </child>
+    </object>
+    <object class="GtkBox" id="about_view">
+        <child><object class="GtkLabel">
+                <property name="label">Orignial Project by</property>
+        </object></child>
+        <child><object class="GtkLabel">
+            <property name="label">
+                PlacidDuckHolder
+                PlacidDuckHolder
+                PlacidDuckHolder
+                PlacidDuckHolder
+                PlacidDuckHolder
+
+            </property>
+        </object></child>
+    </object>
+    <object class="GtkBox" id="general_view">
+        <child>
+            <object class="GtkLabel">
+                <property name="label">GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG</property>
+            </object>
+        </child>
+    </object>
+    <object class="GtkBox" id="character_view">
+        <child>
+            <object class="GtkLabel">
+                <property name="label">GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG</property>
+            </object>
+        </child>
+    </object>
+    <object class="GtkBox" id="fast_t_view">
+        <child>
+            <object class="GtkLabel">
+                <property name="label">GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG</property>
+            </object>
+        </child>
+    </object>
+    <object class="GtkBox" id="inv_view">
+        <child>
+            <object class="GtkLabel">
+                <property name="label">GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG</property>
+            </object>
+        </child>
+    </object>
+    <object class="GtkBox" id="raw_view">
+        <child>
+            <object class="GtkLabel">
+                <property name="label">GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG</property>
+            </object>
+        </child>
+    </object>
+    <object class="GtkBox" id="profile_view">
+        <child>
+            <object class="GtkLabel">
+                <property name="label">GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG</property>
+            </object>
+        </child>
+    </object>
+
+</interface>
