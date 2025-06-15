@@ -1,6 +1,6 @@
 syntax = "proto3";
 package OakSave;
-import "Protobufs/OakShared.proto";
+import "OakShared.proto";
 message PlayerClassSaveGameData {
   string player_class_path = 1;
   uint32 dlc_package_id = 2;

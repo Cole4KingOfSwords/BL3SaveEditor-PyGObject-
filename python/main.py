@@ -5,7 +5,6 @@ already written in Python so f it
 
 Written By Cole4King
 """
-from http.client import responses
 
 #-Import
 import gi
@@ -15,7 +14,7 @@ gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, Gdk, Gio
 
 #-Main
-class main():
+class main:
     def __init__(self):
         def build_from_xml():
             #-Style
@@ -95,7 +94,7 @@ class main():
             print(view_button + " " + str(self.build.get_object(view_button + "button")))
             self.build.get_object(view_button + "button").connect("clicked", self.switch_view, str(view_button + "view"))
         self.build.get_object("open").connect("activate", self.open_file)
-
+        self.build.get_object("window").connect("destroy", quit)
     def open_file(self, *callback):
         self.save_file = subprocess.run(["kdialog", "--getopenfilename"], capture_output=True, text=True).stdout.strip()
         save_file = open(self.save_file, "rb").read()
