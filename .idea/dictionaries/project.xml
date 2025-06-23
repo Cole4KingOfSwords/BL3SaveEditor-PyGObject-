@@ -2,6 +2,7 @@
   <dictionary name="project">
     <words>
       <w>hexpand</w>
+      <w>protobufs</w>
     </words>
   </dictionary>
 </component>

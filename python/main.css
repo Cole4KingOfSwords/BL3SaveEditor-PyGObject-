@@ -1,3 +1,6 @@
 #header, button {
         min-height:5em
     }
+#event_box {
+        background-color:pink;
+    }

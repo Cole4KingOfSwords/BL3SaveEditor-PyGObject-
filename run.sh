@@ -1,11 +1,6 @@
-source .venv/bin/activate
-if test -e "python/Protobufs/OakSave_pb2.py"; then
-  echo 1
+if test -e "main.py"; then
+ python3 main.py
 else
-  cd python/Protobufs
-  protoc --python_out=. OakSave.proto
-  cd ..
-  cd ..
+ cd python || exit
+ python3 main.py
 fi
-cd python
-python3 main.py
